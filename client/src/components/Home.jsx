@@ -16,9 +16,12 @@ const Home = () => {
       const [inputData, setInputData] = useState({distric:"", season:""});
     
       const submitCropSelectionData = (event) => {
+          console.log(inputData);
         event.preventDefault();
         Axios.post("http://localhost:3001/input", {
-            inputData:inputData,
+            // inputData:inputData,
+            distric: inputData.distric,
+            season: inputData.season,
         }).then(() => {
           setInputData([
             ...inputData,
