@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import './Home.css';
+// import './Home.css';
 import wave from './img/wave.png';
 import bg from './img/bg.svg';
 import avatar from './img/avatar.svg';
@@ -58,14 +58,14 @@ function Result() {
 
     return (
         <div>
-            <img className="wave" src={wave}/>
+            {/* <img className="wave" src={wave} alt=""/> */}
 	        <div className="container">
 	        	<div className="img">
-	        		<img src={bg}/>
+	        		{/* <img src={bg} alt=""/> */}
 	        	</div>
 	        	<div className="login-content">
 	        		<form >
-	        			<img src={avatar} />
+	        			{/* <img src={avatar} alt=""/> */}
 	        			<h3 className="title">The most suitable crop to <br/>cultivate in your area at<br/> this season is </h3>
                    		<br/>
                            {

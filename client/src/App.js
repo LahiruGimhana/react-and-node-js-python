@@ -2,10 +2,12 @@ import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Home from './components/Home';
 import Nav from './components/Nav'
-import Result from './components/Result'
+import Result from './components/Result';
+
 
 function App() {
   return (
+    <div class="bg_image">
     <Router>
       <div className="App">
         <Nav />
@@ -15,6 +17,7 @@ function App() {
         </Switch>
       </div>
     </Router>
+    </div>
   );
 }
 
